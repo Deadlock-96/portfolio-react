@@ -3,17 +3,24 @@ import React from 'react'
 import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai'
 import {BiBook, BiMessageSquareDots} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
+import { useState } from 'react'
 
-const nav = () => {
+const Nav = () => {
+  const [activeNav, setActiveNav] = useState('#')
   return (
     <nav>
-      <a href="#home"><AiOutlineHome/></a>
-      <a href="#about"><AiOutlineUser/></a>
-      <a href="#experience"><BiBook/></a>
-      <a href="#services"><RiServiceLine/></a>
-      <a href="#contacts"><BiMessageSquareDots/></a>
+      <a href="/#"  onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
+
+      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser/></a>
+
+      <a href="#exprience" onClick={() => setActiveNav('#exprience')} className={activeNav === '#exprience' ? 'active' : ''}><BiBook/></a>
+
+      <a href="#service" onClick={() => setActiveNav('#service')} className={activeNav === '#service' ? 'active' : ''}><RiServiceLine/></a>
+
+      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDots/></a>
+
     </nav>
   )
 }
 
-export default nav
+export default Nav
