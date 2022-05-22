@@ -3,7 +3,7 @@ import React from 'react'
 
 const testimonial = () => {
   return (
-    <div>testimonial</div>
+    <section id='testimonial'>testimonial</section>
   )
 }
 
