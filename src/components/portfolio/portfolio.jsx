@@ -58,13 +58,18 @@ const portfolio = () => {
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h2>&lt; Portfolio /&gt;</h2>
 
+      <span className='tags top-tags'>
+                    &lt; article &gt;
+                </span>
       <div className="container portfolio_container">
         {
           data.map(({id, image, title, github, demo}) => {
             return(
+              
               <article key={id} className="portfolio_item">
+                        
           <div className="portfolio_item-image">
             <img src={image} alt={title} />
           </div>
@@ -138,8 +143,10 @@ const portfolio = () => {
           <a href="https://dribble.com/Alien_pixels" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
           </div>
         </article> */}
-       
       </div>
+       <span className='tags bottom-tags'>
+                    &lt;/ article &gt;
+                 </span>
       </section>
   )
 }

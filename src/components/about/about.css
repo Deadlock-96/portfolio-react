@@ -20,7 +20,7 @@
     transition: var(--transition);
 }
 
-.about_me-image{
+.about_me-image:hover{
     transform: rotate(0);
 }
 
@@ -80,6 +80,23 @@
         margin: 1rem 0 1.5rem;
     }
 }
+
+.tags {
+    color: #ffd700;
+    opacity: 0.6;
+    bottom: 0;
+    left: 80px;
+    font-size: 20px;
+    font-family: "La Belle Aurore";
+  }
+  .top-tags {
+    bottom: auto;
+    top: 25px;
+  }
+  
+  .botton-tag-html {
+    margin-left: -20px;
+  }
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
